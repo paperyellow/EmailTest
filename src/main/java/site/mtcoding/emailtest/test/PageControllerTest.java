@@ -85,7 +85,6 @@ public class PageControllerTest {
 
     @GetMapping(value = "/user/email/certified")
     public String checkmail(EmailCheckReqDto dto) throws MessagingException {
-
         Users u = userService.이메일인증확인(dto);
 
         if (u != null) {
